@@ -1,0 +1,20 @@
+{
+  "name": "typescript-rough",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "tslint --fix src/**/*.ts",
+    "build": "tsc && rollup -c && yarn run format",
+    "format": "prettier --write --no-config dist/*.js"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7",
+    "rollup": "^0.62.0",
+    "rollup-plugin-buble": "^0.19.2",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^2.9.2"
+  }
+}
